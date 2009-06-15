@@ -1,0 +1,126 @@
+<HTML><HEAD><meta http-equiv="content-type" content="text/html; charset=utf-8"><link href="Resources/axurerpprototype.css" type="text/css" rel="stylesheet"></HEAD>
+<BODY>
+<A href=# onclick='parent.CloseSitemap()' style='font-size:8pt'>Close Frames</A><br><br>
+
+<SCRIPT LANGUAGE="JavaScript">
+image1 = new Image();
+image1.src = 'Resources/plus.gif';
+
+function CloseSitemap()
+{
+	parent.URL = parent.mainFrame.URL
+}
+
+function ToggleDiv(node, id)
+{
+	sibling = document.getElementById(id);
+	if (sibling.style.display == 'none')
+	{
+		if (node.childNodes.length > 0)
+		{
+			if (node.childNodes[0].tagName == "IMG")
+			{
+				node.childNodes[0].src = "Resources/minus.gif";
+			}
+		}
+
+		sibling.style.display = '';
+	}
+	else
+	{
+		if (node.childNodes.length > 0)
+		{
+			if (node.childNodes[0].tagName == "IMG")
+			{
+				node.childNodes[0].src = "Resources/plus.gif";
+			}
+		}
+		sibling.style.display = 'none';
+	}
+}
+
+var currentPage = null;
+
+function highlight(id)
+{
+	if (currentPage != null)
+	{
+		currentPage.style.backgroundColor = '#EEEEFF';
+		currentPage.style.paddingLeft = '0px';
+		currentPage.style.paddingRight = '0px';
+		currentPage.style.border = '0px solid #666666';
+	}
+	
+	currentPage = document.getElementById(id);
+    if (currentPage) {
+	    currentPage.style.backgroundColor = '#DDDDDD';
+	    currentPage.style.paddingLeft = '3px';
+	    currentPage.style.paddingRight = '3px';
+	    currentPage.style.border = '1px solid #666666';
+    }
+}
+
+</SCRIPT>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD nowrap><A onclick="ToggleDiv(this, 'df933f51cd50f45a79904d69db985ef5a')"><IMG SRC="Resources/minus.gif"></A>&nbsp;&nbsp;<A href="Home.html" target="mainFrame"><IMG class="plusminus" SRC="Resources/flow.gif" border=0><SPAN id="pf933f51cd50f45a79904d69db985ef5a">Home</SPAN></A><DIV id="df933f51cd50f45a79904d69db985ef5a">
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A href="首页.html" target="mainFrame"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p7ac6bb388fbe4a5199cf1c11cb66f999">首页</SPAN></A><DIV id="td7ac6bb388fbe4a5199cf1c11cb66f999">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A href="[未登录]post页.html" target="mainFrame"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p069f8c88ba8940fca216c4ffad39414d">[未登录]post页</SPAN></A><DIV id="td069f8c88ba8940fca216c4ffad39414d">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A href="登录弹出框.html" target="mainFrame"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p37acc9a4520a4719896aaa13a0474544">登录弹出框</SPAN></A><DIV id="td37acc9a4520a4719896aaa13a0474544">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A href="[已登录]post页.html" target="mainFrame"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p30444910a02a47038d09d769c3b668d3">[已登录]post页</SPAN></A><DIV id="td30444910a02a47038d09d769c3b668d3">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A href="[已登录]我的一生.html" target="mainFrame"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="pa67f0b74f65340feb5be72c7c61d09df">[已登录]我的一生</SPAN></A><DIV id="tda67f0b74f65340feb5be72c7c61d09df">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A href="别人的一生.html" target="mainFrame"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p667a9608e9a84c2e97a5c8ae39e41108">别人的一生</SPAN></A><DIV id="td667a9608e9a84c2e97a5c8ae39e41108">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A href="404页面.html" target="mainFrame"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="padce17bbedd84e3984638e68f65f5e05">404页面</SPAN></A><DIV id="tdadce17bbedd84e3984638e68f65f5e05">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+			</DIV>
+		</TD>
+	</TR>
+</TABLE></BODY></HTML>

@@ -1,0 +1,100 @@
+<HTML><HEAD><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta http-equiv="imagetoolbar" content="no"><link href="Resources/axurerppage.css" type="text/css" rel="stylesheet"></HEAD><BODY>
+<script type="text/javascript">
+function InitializeSubmenu(submenucontainerid, tablecellroid, tablecellid, fname) { 
+var s = "";
+s = s + "function " + fname + "() { ";
+s = s + "document.getElementById(submenucontainerid).style.visibility='';";
+s = s + "BringToFront(submenucontainerid);";
+s = s + "}";
+if ((index = navigator.userAgent.indexOf("MSIE")) >= 0)
+s = s + "document.getElementById('" + tablecellid + "').attachEvent(\"onmouseover\", " + fname + ");";
+else
+s = s + "document.getElementById('" + tablecellid + "').addEventListener(\"mouseover\", " + fname + ", true);";
+s = s + "document.getElementById(tablecellroid).onclick = function() {";
+s = s + "if( document.createEvent ) {";
+s = s + "var evObj = document.createEvent('MouseEvents');";
+s = s + "evObj.initEvent( 'click', true, false );";
+s = s + "document.getElementById(tablecellid).dispatchEvent(evObj);";
+s = s + "} else if( document.createEventObject ) {";
+s = s + "document.getElementById(tablecellid).fireEvent('onclick');";
+s = s + "}";
+s = s + "}";
+eval(s);
+}
+</script>
+
+<DIV id=ou0 style="position:absolute; left:105px; top:90px; width:486px; height:321px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:494px; height:329px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='登录弹出框_files/u0.png',sizingMethod='scale');
+"><img style="width:494px; height:329px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="登录弹出框_files/u0.png" border="0" alt=""></span>
+
+</DIV>
+<DIV id=u0container style="position:absolute; left:105px; top:90px; width:486px; height:321px;; overflow:visible;">
+
+<DIV id=u1 style="position:absolute; left:2px; top:152px; width:481px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u1_rtf>&nbsp;</DIV></DIV>
+</DIV>
+<IMG id=u0 src="Resources/transparent.gif" style="position:absolute; left:105px; top:90px; width:485px; height:320px"  >
+
+<DIV id=ou2 style="position:absolute; left:107px; top:91px; width:483px; height:30px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:491px; height:38px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='登录弹出框_files/u2.png',sizingMethod='scale');
+"><img style="width:491px; height:38px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="登录弹出框_files/u2.png" border="0" alt=""></span>
+
+</DIV>
+<DIV id=u2container style="position:absolute; left:107px; top:91px; width:483px; height:30px;; overflow:visible;">
+
+<DIV id=u3 style="position:absolute; left:2px; top:6.5px; width:478px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u3_rtf>&nbsp;</DIV></DIV>
+</DIV>
+<IMG id=u2 src="Resources/transparent.gif" style="position:absolute; left:107px; top:91px; width:482px; height:29px"  >
+
+<DIV id=u4 style="position:absolute; left:116px; top:95px; width:150px; height:20px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u4_rtf><span style=" font-family:'\'cb\'ce\'cc\'e5'; color:#000000; font-size:16px;"><b>登录倒带</b></span></DIV></DIV>
+<DIV id=u5 style="position:absolute; left:201px; top:141px; width:320px; height:17px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u5_rtf><span style=" font-family:'\'cb\'ce\'cc\'e5'; color:#000000; font-size:13px;"><b>非注册用户只需输入用户名、密码也可以直接登录</b></span></DIV></DIV>
+<DIV id=u6 style="position:absolute; left:227px; top:228px; width:60px; height:17px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u6_rtf><span style=" font-family:'\'cb\'ce\'cc\'e5'; color:#000000; font-size:13px;">用户名:</span></DIV></DIV>
+<INPUT id=u7  type=text value="" style="position:absolute; left:282px; top:225px; width:175px; height:25px; ; background-color:#FFFFFF; text-align: left ; font-family:'Arial'; font-size: 13px; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   >
+
+<DIV id=u8 style="position:absolute; left:225px; top:273px; width:60px; height:17px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u8_rtf><span style=" font-family:'\'cb\'ce\'cc\'e5'; color:#000000; font-size:13px;">&nbsp; 密码:</span></DIV></DIV>
+<INPUT id=u9  type=text value="" style="position:absolute; left:282px; top:270px; width:175px; height:25px; ; background-color:#FFFFFF; text-align: left ; font-family:'Arial'; font-size: 13px; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   >
+
+<DIV id=u10container style="position:absolute; left:283px; top:313px; width:200px; height:17px; ; ; text-align: left " >
+<DIV id=u11 style="position:absolute; left:16px; top:0px; width:182px; height:17px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u11_rtf><span style=" font-family:'\'cb\'ce\'cc\'e5'; color:#666666; font-size:13px;">记住我的登录状态</span></DIV></DIV>
+</DIV>
+<DIV style="position:absolute; left:283px; top:313px; width:200px; height:17px; ; ; text-align: left " ><INPUT id=u10 style="position:absolute; left:-3px; top:-2px;" type=checkbox value=checkbox checked ></DIV>
+<INPUT id=u12  type=submit value="登录" style="position:absolute; left:280px; top:348px; width:100px; height:25px; ; ; text-align: center ; font-family:'Arial'; font-size: 13px; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" >
+
+<span style="position:absolute; left:561px; top:94px; width:24px; height:24px">
+<span id=ou13 style="position:absolute;left:0px;top:0px;width:24px;height:24px;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='登录弹出框_files/u13.png',sizingMethod='scale');
+"><img style="width:24px; height:24px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="登录弹出框_files/u13.png" border="0" alt=""></span>
+</span>
+<IMG id=u13 src="Resources/transparent.gif" style="position:absolute; left:561px; top:94px; width:24px; height:24px"   >
+
+<DIV id=ou14 style="position:absolute; left:191px; top:172px; width:331px; height:36px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:339px; height:44px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='登录弹出框_files/u14.png',sizingMethod='scale');
+"><img style="width:339px; height:44px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="登录弹出框_files/u14.png" border="0" alt=""></span>
+
+</DIV>
+<DIV id=u14container style="position:absolute; left:191px; top:172px; width:331px; height:36px;; overflow:visible;">
+
+<DIV id=u15 style="position:absolute; left:2px; top:9.5px; width:326px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u15_rtf>&nbsp;</DIV></DIV>
+</DIV>
+<IMG id=u14 src="Resources/transparent.gif" style="position:absolute; left:191px; top:172px; width:330px; height:35px"  >
+
+<DIV id=u16 style="position:absolute; left:255px; top:182px; width:230px; height:17px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u16_rtf><span style=" font-family:'\'cb\'ce\'cc\'e5'; color:#FF0000; font-size:13px;">用户名已占用或密码错，请重试。</span></DIV></DIV><SCRIPT src="Resources/axurerp_pagescript.js"></SCRIPT>
+<SCRIPT src="登录弹出框_files/axurerp_pagespecificscript.js"></SCRIPT></BODY></HTML>

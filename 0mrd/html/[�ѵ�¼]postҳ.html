@@ -1,0 +1,162 @@
+<HTML><HEAD><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta http-equiv="imagetoolbar" content="no"><link href="Resources/axurerppage.css" type="text/css" rel="stylesheet"></HEAD><BODY>
+<script type="text/javascript">
+function InitializeSubmenu(submenucontainerid, tablecellroid, tablecellid, fname) { 
+var s = "";
+s = s + "function " + fname + "() { ";
+s = s + "document.getElementById(submenucontainerid).style.visibility='';";
+s = s + "BringToFront(submenucontainerid);";
+s = s + "}";
+if ((index = navigator.userAgent.indexOf("MSIE")) >= 0)
+s = s + "document.getElementById('" + tablecellid + "').attachEvent(\"onmouseover\", " + fname + ");";
+else
+s = s + "document.getElementById('" + tablecellid + "').addEventListener(\"mouseover\", " + fname + ", true);";
+s = s + "document.getElementById(tablecellroid).onclick = function() {";
+s = s + "if( document.createEvent ) {";
+s = s + "var evObj = document.createEvent('MouseEvents');";
+s = s + "evObj.initEvent( 'click', true, false );";
+s = s + "document.getElementById(tablecellid).dispatchEvent(evObj);";
+s = s + "} else if( document.createEventObject ) {";
+s = s + "document.getElementById(tablecellid).fireEvent('onclick');";
+s = s + "}";
+s = s + "}";
+eval(s);
+}
+</script>
+
+<DIV id=ou0 style="position:absolute; left:0px; top:0px; width:1025px; height:769px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:1033px; height:777px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='[已登录]post页_files/u0.png',sizingMethod='scale');
+"><img style="width:1033px; height:777px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="[已登录]post页_files/u0.png" border="0" alt=""></span>
+
+</DIV>
+<DIV id=u0container style="position:absolute; left:0px; top:0px; width:1025px; height:769px;; overflow:visible;">
+
+<DIV id=u1 style="position:absolute; left:2px; top:376px; width:1020px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u1_rtf>&nbsp;</DIV></DIV>
+</DIV>
+<IMG id=u0 src="Resources/transparent.gif" style="position:absolute; left:0px; top:0px; width:1024px; height:768px"  >
+
+<DIV id=u2 style="position:absolute; left:958px; top:4px; width:56px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u2_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:13px;"><u><b>Leeffett</b></u></span></DIV></DIV>
+<span style="position:absolute; left:0px; top:0px; width:138px; height:55px">
+<span id=ou3 style="position:absolute;left:0px;top:0px;width:138px;height:55px;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='[已登录]post页_files/u3.png',sizingMethod='scale');
+"><img style="width:138px; height:55px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="[已登录]post页_files/u3.png" border="0" alt=""></span>
+</span>
+<IMG id=u3 src="Resources/transparent.gif" style="position:absolute; left:0px; top:0px; width:138px; height:55px"   >
+
+<INPUT id=u4  type=submit value="倒带" style="position:absolute; left:366px; top:15px; width:60px; height:25px; ; ; text-align: center ; font-family:'Arial'; font-size: 13px; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" >
+
+<INPUT id=u5  type=submit value="碰碰运气" style="position:absolute; left:436px; top:15px; width:80px; height:25px; ; ; text-align: center ; font-family:'Arial'; font-size: 13px; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" >
+
+<DIV id=u6 style="position:absolute; left:216px; top:20px; width:15px; height:17px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u6_rtf><span style=" font-family:'\'cb\'ce\'cc\'e5'; color:#000000; font-size:13px;">年</span></DIV></DIV>
+<SELECT id=u7  style="position:absolute; left:146px; top:18px; width:65px; height:22px; ; background-color:#FFFFFF; text-align: left ; font-family:'Arial'; font-size: 13px; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" >
+<OPTION selected value="2009">2009</OPTION>
+<OPTION  value="2008">2008</OPTION>
+<OPTION  value="2007">2007</OPTION>
+<OPTION  value="2006">2006</OPTION>
+<OPTION  value="2005">2005</OPTION>
+<OPTION  value="1930">1930</OPTION>
+</SELECT>
+
+<SELECT id=u8  style="position:absolute; left:236px; top:18px; width:35px; height:22px; ; background-color:#FFFFFF; text-align: left ; font-family:'Arial'; font-size: 13px; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" >
+<OPTION selected value="6">6</OPTION>
+<OPTION  value="5">5</OPTION>
+<OPTION  value="4">4</OPTION>
+<OPTION  value="3">3</OPTION>
+<OPTION  value="2">2</OPTION>
+<OPTION  value="1">1</OPTION>
+</SELECT>
+
+<DIV id=u9 style="position:absolute; left:278px; top:20px; width:15px; height:17px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u9_rtf><span style=" font-family:'\'cb\'ce\'cc\'e5'; color:#000000; font-size:13px;">月</span></DIV></DIV>
+<SELECT id=u10  style="position:absolute; left:296px; top:18px; width:45px; height:22px; ; background-color:#FFFFFF; text-align: left ; font-family:'Arial'; font-size: 13px; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" >
+<OPTION  value="12">12</OPTION>
+<OPTION selected value="11">11</OPTION>
+<OPTION  value="10">10</OPTION>
+<OPTION  value="9">9</OPTION>
+<OPTION  value="8">8</OPTION>
+<OPTION  value="7">7</OPTION>
+<OPTION  value="6">6</OPTION>
+<OPTION  value="5">5</OPTION>
+<OPTION  value="4">4</OPTION>
+<OPTION  value="3">3</OPTION>
+<OPTION  value="2">2</OPTION>
+<OPTION  value="1">1</OPTION>
+</SELECT>
+
+<DIV id=u11 style="position:absolute; left:347px; top:20px; width:15px; height:17px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u11_rtf><span style=" font-family:'\'cb\'ce\'cc\'e5'; color:#000000; font-size:13px;">日</span></DIV></DIV>
+<span style="position:absolute; left:0px; top:65px; width:1013px; height:5px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='[已登录]post页_files/u12.png',sizingMethod='scale');
+"><img style="width:1013px; height:5px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="[已登录]post页_files/u12.png" border="0" alt=""></span>
+
+<IMG id=u12 src="Resources/transparent.gif" style="position:absolute; left:0px; top:64.5px; width:1010px; height:2px">
+
+<DIV id=u13 style="position:absolute; left:20px; top:125px; width:250px; height:20px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u13_rtf><span style=" font-family:'\'cb\'ce\'cc\'e5'; color:#000000; font-size:16px;"><b>这一天，有什么回忆值得留下？</b></span></DIV></DIV>
+<INPUT id=u14  type=text value="" style="position:absolute; left:20px; top:151px; width:560px; height:42px; ; background-color:#FFFFFF; text-align: left ; font-family:'Arial'; font-size: 13px; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   >
+
+<INPUT id=u15  type=submit value="保存" style="position:absolute; left:529px; top:201px; width:50px; height:25px; ; ; text-align: center ; font-family:'Arial'; font-size: 13px; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" >
+
+<DIV id=u16 style="position:absolute; left:480px; top:125px; width:100px; height:20px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u16_rtf><span style=" font-family:'\'cb\'ce\'cc\'e5'; color:#666666; font-size:13px;">可以输入 </span><b><span style=" font-family:'\'cb\'ce\'cc\'e5'; color:#000000; font-size:16px;">70</b></span><b><span style=" font-family:'\'cb\'ce\'cc\'e5'; color:#666666; font-size:16px;"> </b></span><span style=" font-family:'\'cb\'ce\'cc\'e5'; color:#666666; font-size:13px;">字</span></DIV></DIV>
+<DIV id=ou17 style="position:absolute; left:0px; top:67px; width:1011px; height:24px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:1019px; height:32px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='[已登录]post页_files/u17.png',sizingMethod='scale');
+"><img style="width:1019px; height:32px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="[已登录]post页_files/u17.png" border="0" alt=""></span>
+
+</DIV>
+<DIV id=u17container style="position:absolute; left:0px; top:67px; width:1011px; height:24px;; overflow:visible;">
+
+<DIV id=u18 style="position:absolute; left:2px; top:3.5px; width:1006px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u18_rtf>&nbsp;</DIV></DIV>
+</DIV>
+<IMG id=u17 src="Resources/transparent.gif" style="position:absolute; left:0px; top:67px; width:1010px; height:23px"  >
+
+<DIV id=u19 style="position:absolute; left:10px; top:70px; width:100px; height:17px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u19_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;"><b>2009-06-11,</b></span><b><span style=" font-family:'\'cb\'ce\'cc\'e5'; color:#000000; font-size:13px;">昨天</b></span></DIV></DIV>
+<DIV id=u20 style="position:absolute; left:126px; top:70px; width:60px; height:17px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u20_rtf><span style=" font-family:'\'cb\'ce\'cc\'e5'; color:#0000FF; font-size:13px;"><u>我的一生</u></span></DIV></DIV>
+<DIV id=ou21 style="position:absolute; left:22px; top:280px; width:561px; height:51px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:569px; height:59px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='[已登录]post页_files/u21.png',sizingMethod='scale');
+"><img style="width:569px; height:59px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="[已登录]post页_files/u21.png" border="0" alt=""></span>
+
+</DIV>
+<DIV id=u21container style="position:absolute; left:22px; top:280px; width:561px; height:51px;; overflow:visible;">
+
+<DIV id=u22 style="position:absolute; left:2px; top:17px; width:556px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u22_rtf>&nbsp;</DIV></DIV>
+</DIV>
+<IMG id=u21 src="Resources/transparent.gif" style="position:absolute; left:22px; top:280px; width:560px; height:50px"  >
+
+<DIV id=u23 style="position:absolute; left:40px; top:296px; width:300px; height:17px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u23_rtf><span style=" font-family:'\'cb\'ce\'cc\'e5'; color:#000000; font-size:13px;">思考了一个问题：如何看待我们的人生。</span></DIV></DIV>
+<DIV id=ou24 style="position:absolute; left:23px; top:350px; width:561px; height:51px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:569px; height:59px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='[已登录]post页_files/u21.png',sizingMethod='scale');
+"><img style="width:569px; height:59px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="[已登录]post页_files/u21.png" border="0" alt=""></span>
+
+</DIV>
+<DIV id=u24container style="position:absolute; left:23px; top:350px; width:561px; height:51px;; overflow:visible;">
+
+<DIV id=u25 style="position:absolute; left:2px; top:17px; width:556px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u25_rtf>&nbsp;</DIV></DIV>
+</DIV>
+<IMG id=u24 src="Resources/transparent.gif" style="position:absolute; left:23px; top:350px; width:560px; height:50px"  >
+
+<DIV id=u26 style="position:absolute; left:41px; top:366px; width:300px; height:17px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u26_rtf><span style=" font-family:'\'cb\'ce\'cc\'e5'; color:#000000; font-size:13px;">思考了一个问题：如何看待我们的人生。</span></DIV></DIV><SCRIPT src="Resources/axurerp_pagescript.js"></SCRIPT>
+<SCRIPT src="[已登录]post页_files/axurerp_pagespecificscript.js"></SCRIPT></BODY></HTML>
